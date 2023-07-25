@@ -12,6 +12,8 @@
     <!-- TailwindCSS and DaisyUI CDN Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome kit link -->
+    <script src="https://kit.fontawesome.com/043c1ff57e.js" crossorigin="anonymous"></script>
 
     <style>
         .font-lato{
@@ -19,10 +21,11 @@
         }
     </style>
 </head>
+
 <body class="font-lato">
     <!-- header section -->
     <header class="container mx-auto">
-        <nav class="bg-red-400 rounded-full">
+        <nav class="bg-red-500 rounded-full h-20">
             <div class="navbar justify-between text-white">
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-7 text-lg font-medium">
@@ -36,11 +39,63 @@
                     <img src="./images/logo.png" alt="">
                     <h3 class="normal-case text-4xl font-bold">Fruit Burst</h3>
                 </div>
-                <div class="form-control">
-                    <input type="text" placeholder="Search" class="input input-bordered w-[400px] mr-10 rounded-full" />
+               
+                <div class="form-control px-7">
+                    <div class="flex rounded-full">
+                      <input type="text" placeholder="Search here" class="input text-black bg-white rounded-l-full w-[400px]" />
+                      <div class="pr-4 inline-flex items-center bg-white border-none rounded-r-full">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #121212;"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+
+
+        <!-- slider carousel -->
+
+        <div class="carousel w-full mt-14">
+            <!-- slide 1 -->
+            <div id="slide1" class="hero carousel-item relative w-full">
+              <img src="/images/banner1.png" class="w-full" />
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-3xl">
+                  <h1 class="mb-6 text-7xl font-extrabold text-white">Exotic Tastes at Your Doorstep</h1>
+                  <p class="mb-8 font-medium text-xl text-white">We supply highly quality organic products</p>
+                  <button class="btn text-white text-lg bg-red-500 font-extrabold rounded-lg border-0 normal-case">Shop Now</button>
                 </div>
               </div>
-        </nav>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+
+            <!-- slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="/images/banner2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="/images/banner3.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="/images/banner4.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          
     </header>
 
 
