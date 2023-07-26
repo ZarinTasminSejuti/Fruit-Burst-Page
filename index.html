@@ -57,7 +57,7 @@
 
         <!-- slider carousel -->
 
-        <div class="carousel min-h-[600px] overflow-hidden w-full mt-14 rounded-lg">
+        <div class="carousel h-full lg:min-h-[600px] overflow-hidden w-full mt-14 rounded-lg">
             <!-- slide 1 -->
             <div id="slide1" class="hero carousel-item relative w-full bg-gradient-to-b from-black from-5%">
               <img src="./images/banner1.png" class="w-full h-full absolute mix-blend-multiply" />
@@ -132,7 +132,7 @@
             </div>
           </div>
 
-          <div class="bg-white w-2/3 px-16 py-12 bottom-28 mx-auto
+          <div class="invisible lg:visible bg-white w-2/3 px-16 py-12 bottom-28 mx-auto
          relative rounded-lg shadow-lg">
             <div class="flex justify-between text-center">
               <div>
@@ -163,15 +163,15 @@
 
     <!-- main section -->
     <main class="container mx-auto">
-        <section class="mt-24 mb-14">
-            <div class="flex">
-                <div class="w-1/2">
+        <section class="lg:mt-24 mb-14">
+            <div class="flex flex-col lg:flex-row">
+                <div class="w-full lg:w-1/2">
                     <h2 class="mb-6 text-5xl text-black font-extrabold">Deal of the day</h2>
                     <p class="w-4/5 text-gray-500">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 
                 <!-- countdown section -->
-                <div class="grid grid-flow-col gap-2 text-center w-1/2 mt-5 auto-cols-max justify-end">
+                <div class="grid grid-flow-col gap-2 text-center w-full lg:w-1/2 mt-5 auto-cols-max justify-end">
                     <div class="flex flex-col">
                       <span class="countdown font-extrabold text-5xl">
                         <span style="--value:29;"></span>
@@ -425,7 +425,7 @@
     
     <!-- team section -->
         <section>
-          <div class="hero h-[690px] rounded-lg" style="background-image: url('./images/team.png');">
+          <div class="hero lg:h-[690px] rounded-lg" style="background-image: url('./images/team.png');">
             <div class="hero-overlay rounded-lg bg-black bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content inline-block">
               <div class="max-w-full text-white">
@@ -433,7 +433,7 @@
                 <p class="mx-auto mb-9 w-7/12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
               </div>
 
-              <div class="team-container text-white flex gap-24">
+              <div class="team-container text-white flex flex-col lg:flex-row gap-24">
                 <div class="card-body items-center text-center">
                   <img src="./images/member1.png" alt="" class="mb-6">
                     <h2 class="text-2xl">Awlad Hossain</h2>
