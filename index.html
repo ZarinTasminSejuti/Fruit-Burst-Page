@@ -56,10 +56,29 @@
 
         <!-- slider carousel -->
 
-        <div class="carousel w-full mt-14">
+        <div class="carousel min-h-[600px] w-full mt-14">
             <!-- slide 1 -->
             <div id="slide1" class="hero carousel-item relative w-full bg-gradient-to-b from-black from-5%">
               <img src="/images/banner1.png" class="w-full absolute mix-blend-multiply" />
+
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-3xl">
+                  <h1 class="mb-6 text-7xl font-extrabold text-white">Exotic Tastes at Your Doorstep</h1>
+                  <p class="mb-8 font-medium text-xl text-white">We supply highly quality organic products</p>
+                  <button class="btn text-white text-lg bg-red-500 font-extrabold rounded-lg border-0 normal-case hover:text-black">Shop Now</button>
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn  bg-black border-0 text-white hover:text-black btn-circle">❮</a> 
+                <a href="#slide2" class="btn  bg-black border-0 text-white hover:text-black btn-circle">❯</a>
+              </div>
+            </div> 
+
+
+            <!-- slide 2-->
+            <div id="slide2" class="hero carousel-item relative w-full bg-gradient-to-b from-black from-5%">
+              <img src="/images/banner2.png" class="w-full absolute mix-blend-multiply" />
+
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-3xl">
                   <h1 class="mb-6 text-7xl font-extrabold text-white">Exotic Tastes at Your Doorstep</h1>
@@ -68,31 +87,46 @@
                 </div>
               </div>
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
+                <a href="#slide1" class="btn bg-black border-0 text-white hover:text-black btn-circle">❮</a> 
+                <a href="#slide3" class="btn bg-black border-0 text-white hover:text-black btn-circle">❯</a>
               </div>
             </div> 
 
-            <!-- slide 2 -->
-            <div id="slide2" class="carousel-item relative w-full">
-              <img src="/images/banner2.png" class="w-full" />
+
+            <!-- slide 3 -->
+            <div id="slide3" class="hero carousel-item relative w-full bg-gradient-to-b from-black from-5%">
+              <img src="./images/banner3.png" class="w-full absolute mix-blend-multiply" />
+
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-3xl">
+                  <h1 class="mb-6 text-7xl font-extrabold text-white">Exotic Tastes at Your Doorstep</h1>
+                  <p class="mb-8 font-medium text-xl text-white">We supply highly quality organic products</p>
+                  <button class="btn text-white text-lg bg-red-500 font-extrabold rounded-lg border-0 normal-case">Shop Now</button>
+                </div>
+              </div>
+              
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
+                <a href="#slide2" class="btn bg-black border-0 text-white hover:text-black btn-circle">❮</a> 
+                <a href="#slide4" class="btn bg-black border-0 text-white hover:text-black btn-circle">❯</a>
               </div>
             </div> 
-            <div id="slide3" class="carousel-item relative w-full">
-              <img src="/images/banner3.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
+
+
+            <!-- slide 4 -->
+            <div id="slide4" class="hero carousel-item relative w-full bg-gradient-to-b from-black from-5%">
+              <img src="./images/banner4.png" class="w-full absolute mix-blend-multiply" />
+
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-3xl">
+                  <h1 class="mb-6 text-7xl font-extrabold text-white">Exotic Tastes at Your Doorstep</h1>
+                  <p class="mb-8 font-medium text-xl text-white">We supply highly quality organic products</p>
+                  <button class="btn text-white text-lg bg-red-500 font-extrabold rounded-lg border-0 normal-case">Shop Now</button>
+                </div>
               </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative w-full">
-              <img src="/images/banner4.png" class="w-full" />
+
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
+                <a href="#slide3" class="btn bg-black border-0 text-white hover:text-black btn-circle">❮</a> 
+                <a href="#slide1" class="btn bg-black border-0 text-white hover:text-black btn-circle">❯</a>
               </div>
             </div>
           </div>
@@ -101,14 +135,141 @@
 
 
     <!-- main section -->
-    <main>
+    <main class="container mx-auto">
         <section class="my-24">
-            <div>
-                <div>
-                    <h2>Deal of the day</h2>
+            <div class="flex">
+                <div class="w-1/2">
+                    <h2 class="mb-6 text-5xl font-extrabold">Deal of the day</h2>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                
+                <!-- countdown section -->
+                <div class="grid grid-flow-col gap-2 text-center w-1/2 auto-cols-max justify-end">
+                    <div class="flex flex-col">
+                      <span class="countdown font-extrabold text-5xl">
+                        <span style="--value:29;"></span>
+                      </span><p class="text-base mt-2 text-gray-600 font-medium">Days</p>
+                    </div> 
+                    <i class="fa-solid mt-1 fa-ellipsis-vertical text-3xl mx-4" style="color: #000000;"></i>
+
+                    <div class="flex flex-col">
+                      <span class="countdown font-extrabold text-5xl">
+                        <span style="--value:15;"></span>
+                      </span><p class="text-base mt-2 text-gray-600 font-medium">Hours</p>
+                    </div> 
+                    <i class="fa-solid mt-1 fa-ellipsis-vertical text-3xl mx-4" style="color: #000000;"></i>
+
+                    <div class="flex flex-col">
+                      <span class="countdown font-extrabold text-5xl">
+                        <span style="--value:25;"></span>
+                      </span> <p class="text-base mt-2 text-gray-600 font-medium">Minutes</p>         
+                    </div> 
+                    <i class="fa-solid mt-1 fa-ellipsis-vertical text-3xl mx-4" style="color: #000000;"></i>
+
+                    <div class="flex flex-col">
+                      <span class="countdown font-extrabold text-5xl">
+                        <span style="--value:08;"></span>
+                      </span><p class="text-base mt-2 text-gray-600 font-medium">Seconds</p>
+                    </div>
                 </div>
             </div>
+
+
+            <!-- fruit card section -->
+
+            <div class="grid gap-11 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12">
+                <!-- first review card -->
+                <div class="card card-compact w-80 h-[477px] border rounded-lg border-gray-200">
+                    <figure><img class="w-28 h-[131px] mt-12" src="./images/fruit6.png" alt="fruits" /></figure>
+                    <div class="card-body items-center">
+                      <p>12.90$ - 18.85$</p>
+                      <!-- <hr class="h-px my-8 bg-red-600 border-0 dark:bg-red-700"> -->
+                      <p>Apples</p>
+                   
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked/>
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400"/>
+                        </div>
+                        <div class="text-center space-y-4 mt-4">
+                            <h4 class="text-sm font-semibold text-red-600">Details</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- first review card -->
+                <div class="card card-compact w-80 h-[477px] bg-white border rounded-lg border-gray-200">
+                    <figure><img class="w-28 h-[131px] mt-12" src="./images/fruit7.png" alt="fruits" /></figure>
+                    <div class="card-body items-center">
+                      <p>12.90$ - 18.85$</p>
+                      <!-- <hr class="h-px my-8 bg-red-600 border-0 dark:bg-red-700"> -->
+                      <p>Apples</p>
+                   
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked/>
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400"/>
+                        </div>
+                        <div class="text-center space-y-4 mt-4">
+                            <h4 class="text-sm font-semibold text-red-600">Details</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- first review card -->
+                <div class="card card-compact w-80 h-[477px] bg-base-100 border rounded-lg border-gray-200">
+                    <figure><img class="w-28 h-[131px] mt-12" src="./images/fruit8.png" alt="fruits" /></figure>
+                    <div class="card-body items-center">
+                      <p>12.90$ - 18.85$</p>
+                      <!-- <hr class="h-px my-8 bg-red-600 border-0 dark:bg-red-700"> -->
+                      <p>Apples</p>
+                   
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked/>
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400"/>
+                        </div>
+                        <div class="text-center space-y-4 mt-4">
+                            <h4 class="text-sm font-semibold text-red-600">Details</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- first review card -->
+                <div class="card card-compact w-80 h-[477px] bg-base-100 border rounded-lg border-gray-200">
+                    <figure><img class="w-28 h-[131px] mt-12" src="./images/fruit9.png" alt="fruits" /></figure>
+                    <div class="card-body items-center">
+                      <p>12.90$ - 18.85$</p>
+                      <!-- <hr class="h-px my-8 bg-red-600 border-0 dark:bg-red-700"> -->
+                      <p>Apples</p>
+                   
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked/>
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400"/>
+                        </div>
+                        <div class="text-center space-y-4 mt-4">
+                            <h4 class="text-sm font-semibold text-red-600">Details</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </section>
+
+        <button class="btn text-white text-lg bg-red-500 font-extrabold rounded-lg border-0 normal-case hover:text-black">Shop Now</button>
     </main>
 
 
