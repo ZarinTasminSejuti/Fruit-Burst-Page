@@ -29,7 +29,7 @@
     <!-- header section -->
     <header class="container mx-auto mt-14">
         <nav>
-            <div class="bg-red-500 rounded-full h-24 navbar justify-between p-4 text-white">
+            <div class="lg:bg-red-500 rounded-full h-24 navbar justify-between p-4 text-black lg:text-white">
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-7 text-lg font-medium">
                     <li><a>Home</a></li>
@@ -43,8 +43,23 @@
                     <h3 class="normal-case text-4xl font-bold">Fruit Burst</h3>
                 </div>
                
-                <div class="form-control px-7">
-                    <div class="flex rounded-full">
+                <!-- for small device menu -->
+
+                <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="lg:hidden inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  
+                </button>
+                
+
+
+
+
+
+
+                <div class="form-control px-7 hidden lg:contents">
+                    <div class="flex flex-row rounded-full">
                       <input type="text" placeholder="Search here" class="input text-black bg-white rounded-l-full w-[400px]" />
                       <div class="pr-4 inline-flex items-center bg-white border-none rounded-r-full">
                         <i class="fa-solid fa-magnifying-glass" style="color: #121212;"></i>
@@ -57,15 +72,15 @@
 
         <!-- slider carousel -->
 
-        <div class="carousel h-full lg:min-h-[600px] overflow-hidden w-full mt-14 rounded-lg">
+        <div class="carousel min-h-[600px] overflow-hidden w-full mt-14 rounded-lg">
             <!-- slide 1 -->
-            <div id="slide1" class="hero carousel-item relative w-full bg-gradient-to-b from-black from-5%">
+            <div id="slide1" class="hero carousel-item relative w-full lg:bg-gradient-to-b from-black from-5%">
               <img src="./images/banner1.png" class="w-full h-full absolute mix-blend-multiply" />
 
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-3xl">
-                  <h1 class="mb-6 -mt-24 text-7xl leading-tight font-extrabold text-white">Exotic Tastes at Your Doorstep</h1>
-                  <p class="mb-8 font-medium text-xl text-white">We supply highly quality organic products</p>
+                  <h1 class="mb-6 -mt-24 text-3xl lg:text-7xl leading-tight font-extrabold text-white">Exotic Tastes at Your Doorstep</h1>
+                  <p class="mb-8 font-medium text-base lg:text-xl text-white">We supply highly quality organic products</p>
                   <button class="btn text-white px-7 text-lg bg-red-500 font-extrabold rounded-lg border-0 normal-case hover:text-black">Shop Now</button>
                 </div>
               </div>
@@ -163,15 +178,15 @@
 
     <!-- main section -->
     <main class="container mx-auto">
-        <section class="lg:mt-24 mb-14">
+        <section class="lg:mt-24">
             <div class="flex flex-col lg:flex-row">
-                <div class="w-full lg:w-1/2">
+                <div class="w-full text-center lg:text-left lg:w-1/2">
                     <h2 class="mb-6 text-5xl text-black font-extrabold">Deal of the day</h2>
-                    <p class="w-4/5 text-gray-500">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <p class="w-9/12 lg:w-4/5 mx-auto lg:mx-0 text-gray-500">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 
                 <!-- countdown section -->
-                <div class="grid grid-flow-col gap-2 text-center w-full lg:w-1/2 mt-5 auto-cols-max justify-end">
+                <div class="grid grid-flow-col lg:gap-2 text-center w-full lg:w-1/2 mt-8 lg:mt-5 auto-cols-max justify-center lg:justify-end">
                     <div class="flex flex-col">
                       <span class="countdown font-extrabold text-5xl">
                         <span style="--value:29;"></span>
@@ -204,9 +219,9 @@
 
             <!-- fruit card section -->
 
-            <div class="grid gap-11 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12">
+            <div class="grid gap-11 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12 p-5 lg:p-0">
                 <!-- first review card -->
-                <div class="card card-compact w-80 h-[477px] border rounded-lg border-gray-200">
+                <div class="card card-compact w-full lg:w-80 h-[477px] border rounded-lg border-gray-200">
                     <figure><img class="w-28 h-[131px] mt-11" src="./images/fruit6.png" alt="fruits" /></figure>
                     <div class="card-body mt-11 items-center">
                       <p class="text-2xl font-bold">12.90$ - 18.85$</p>
@@ -259,7 +274,7 @@
                 </div>
 
                 <!-- Second review card -->
-                <div class="card card-compact w-80 h-[477px] border rounded-lg border-gray-200">
+                <div class="card card-compact w-full lg:w-80 h-[477px] border rounded-lg border-gray-200">
                   <figure><img class="w-28 h-[131px] mt-11" src="./images/fruit7.png" alt="fruits" /></figure>
                   <div class="card-body mt-11 items-center">
                     <p class="text-2xl font-bold">12.90$ - 18.85$</p>
@@ -312,7 +327,7 @@
               </div>
 
                 <!-- third review card -->
-                <div class="card card-compact w-80 h-[477px] border rounded-lg border-gray-200">
+                <div class="card card-compact w-full lg:w-80 h-[477px] border rounded-lg border-gray-200">
                   <figure><img class="w-28 h-[131px] mt-11" src="./images/fruit8.png" alt="fruits" /></figure>
                   <div class="card-body mt-11 items-center">
                     <p class="text-2xl font-bold">12.90$ - 18.85$</p>
@@ -365,7 +380,7 @@
               </div>
 
                 <!-- fourth review card -->
-                <div class="card card-compact w-80 h-[477px] border rounded-lg border-gray-200">
+                <div class="card card-compact w-full lg:w-80 h-[477px] border rounded-lg border-gray-200">
                   <figure><img class="w-28 h-[131px] mt-11" src="./images/fruit9.png" alt="fruits" /></figure>
                   <div class="card-body mt-11 items-center">
                     <p class="text-2xl font-bold">12.90$ - 18.85$</p>
@@ -420,7 +435,7 @@
             
         </section>
 
-        <div class="text-center mb-32"> <button class="btn text-white text-lg bg-red-500 font-extrabold rounded-lg border-0 px-6 normal-case hover:text-black">Shop All</button></div>
+        <div class="text-center mb-10 lg:mb-32 mt-14"> <button class="btn text-white text-lg bg-red-500 font-extrabold rounded-lg border-0 px-6 normal-case hover:text-black">Shop All</button></div>
     
     
     <!-- team section -->
@@ -429,11 +444,11 @@
             <div class="hero-overlay rounded-lg bg-black bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content inline-block">
               <div class="max-w-full text-white">
-                <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+                <h1 class="mb-5 text-3xl lg:text-5xl font-bold">Meet the team section</h1>
                 <p class="mx-auto mb-9 w-7/12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
               </div>
 
-              <div class="team-container text-white flex flex-col lg:flex-row gap-24">
+              <div class="team-container text-white flex flex-col lg:flex-row lg:gap-24">
                 <div class="card-body items-center text-center">
                   <img src="./images/member1.png" alt="" class="mb-6">
                     <h2 class="text-2xl">Awlad Hossain</h2>
@@ -480,88 +495,87 @@
         </section>
  
     <!-- why choose us section -->
-        <section class="my-32">
+        <section class="my-16 lg:my-32">
           <h1 class="text-black font-extrabold text-5xl text-center">Why Choose Us</h1>
-          <p class="mt-6 mb-12 w-2/5 m-auto text-gray-500 text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <p class="mt-6 mb-12 w-9/12 lg:w-2/5 m-auto text-gray-500 text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 
 
-          <div class="flex justify-between">
+          <div class="flex flex-col lg:flex-row justify-between -order-2 lg:order-none">
     <!-- left -->
-              <div class="w-1/3 p-5 flex flex-col justify-between
-              ">
-                <div class="flex justify-between">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="p-4 mt-2 bg-gray-200 rounded-full" width="60" height="60">
+              <div class="w-full lg:w-1/3 p-5 flex flex-col justify-between">
+                <div class="flex flex-col lg:flex-row justify-between">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="p-4 mt-2 bg-gray-200 rounded-full mx-auto lg:mx-0" width="60" height="60">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                   </svg>
-                  <div class="text-left w-96">
-                    <h2 class="text-xl font-extrabold">Dedicated Team</h2>
-                    <hr class="text-gray-500 w-24 my-2 border">
-                    <p class="text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <div class="text-center lg:text-left lg:w-96">
+                    <h2 class="text-xl font-extrabold my-4 lg:my-0">Dedicated Team</h2>
+                    <hr class="text-gray-500 w-24 my-2 mx-auto lg:mx-0 border">
+                    <p class="text-gray-500 mx-auto lg:mx-0 w-60 lg:w-96">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                   </div>
                 </div>
 
-                <div class="flex justify-between">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="p-4 mt-2 bg-gray-200 rounded-full" width="60" height="60">
+                <div class="flex flex-col lg:flex-row justify-between">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="p-4 mt-2 bg-gray-200 mx-auto lg:mx-0 rounded-full" width="60" height="60">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />     
                   </svg>
-                  <div class="text-left w-96">
-                    <h2 class="text-xl font-extrabold">Fresh is Best</h2>
-                    <hr class="text-gray-500 w-24 my-2 border">
-                    <p class="text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <div class="text-center lg:text-left lg:w-96">
+                    <h2 class="text-xl font-extrabold my-4 lg:my-0">Fresh is Best</h2>
+                    <hr class="text-gray-500 w-24 my-2 mx-auto lg:mx-0 border">
+                    <p class="text-gray-500 mx-auto lg:mx-0 w-60 lg:w-96">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                   </div>
                 </div>
 
-                <div class="flex justify-between">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="p-4 mt-2 bg-gray-200 rounded-full" width="60" height="60">
+                <div class="flex flex-col lg:flex-row justify-between">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="p-4 mt-2 bg-gray-200 mx-auto lg:mx-0 rounded-full" width="60" height="60">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
                   </svg>
-                  <div class="text-left w-96">
-                    <h2 class="text-xl font-extrabold">Gift Certificates</h2>
-                    <hr class="text-gray-500 w-24 my-2 border">
-                    <p class="text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <div class="text-center lg:text-left lg:w-96">
+                    <h2 class="text-xl font-extrabold my-4 lg:my-0">Gift Certificates</h2>
+                    <hr class="text-gray-500 w-24 my-2 mx-auto lg:mx-0 border">
+                    <p class="text-gray-500 mx-auto lg:mx-0 w-60 lg:w-96">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                   </div>
                 </div>
                 
               </div>
             
 <!-- middle -->
-            <div class="image-section w-1/3">
+            <div class="image-section w-full lg:w-1/3 -order-1 lg:order-none">
               <img src="./images/whychoose1.png" alt="" class="m-auto">
               
             </div>
 <!-- right -->
-            <div class="w-1/3 p-5 flex flex-col justify-between">
-              <div class="flex justify-between">
-                <div class="text-right w-96">
-                  <h2 class="text-xl font-extrabold">Integrated Supplier</h2>
-                  <hr class="text-gray-500 w-24 my-2 border ml-auto">
-                  <p class="text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            <div class="w-full lg:w-1/3 p-5 flex flex-col justify-between order-last lg:order-none">
+              <div class="flex flex-col-reverse lg:flex-row justify-between">
+                <div class="text-center lg:text-right lg:w-96">
+                  <h2 class="text-xl font-extrabold my-4 lg:my-0">Integrated Supplier</h2>
+                  <hr class="text-gray-500 w-24 my-2 border mx-auto lg:mx-0 lg:ml-auto">
+                  <p class="text-gray-500 mx-auto lg:mx-0 w-60 lg:w-96">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="p-4 mt-2 bg-gray-200 rounded-full" width="60" height="60">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="p-4 mt-2 bg-gray-200 mx-auto lg:mx-0 rounded-full" width="60" height="60">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                 </svg>
                 
               </div>
 
-              <div class="flex justify-between">
-                <div class="text-right w-96">
-                  <h2 class="text-xl font-extrabold">Sustainable Practice</h2>
-                  <hr class="text-gray-500 w-24 my-2 border ml-auto">
-                  <p class="text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              <div class="flex flex-col-reverse lg:flex-row justify-between">
+                <div class="text-center lg:text-right lg:w-96">
+                  <h2 class="text-xl font-extrabold my-4 lg:my-0">Sustainable Practice</h2>
+                  <hr class="text-gray-500 w-24 my-2 border mx-auto lg:mx-0 lg:ml-auto">
+                  <p class="text-gray-500 mx-auto lg:mx-0 w-60 lg:w-96">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="p-4 mt-2 bg-gray-200 rounded-full" width="60" height="60">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="p-4 mt-2 bg-gray-200 mx-auto lg:mx-0 rounded-full" width="60" height="60">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.87c1.355 0 2.697.055 4.024.165C17.155 8.51 18 9.473 18 10.608v2.513m-3-4.87v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0L3 16.5m15-3.38a48.474 48.474 0 00-6-.37c-2.032 0-4.034.125-6 .37m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.17c0 .62-.504 1.124-1.125 1.124H4.125A1.125 1.125 0 013 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 016 13.12M12.265 3.11a.375.375 0 11-.53 0L12 2.845l.265.265zm-3 0a.375.375 0 11-.53 0L9 2.845l.265.265zm6 0a.375.375 0 11-.53 0L15 2.845l.265.265z" />
                 </svg>
                 
               </div>
 
-              <div class="flex justify-between">
-                <div class="text-right w-96">
-                  <h2 class="text-xl font-extrabold">The Benefits Only</h2>
-                  <hr class="text-gray-500 w-24 my-2 border ml-auto">
-                  <p class="text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              <div class="flex flex-col-reverse lg:flex-row justify-between">
+                <div class="text-center lg:text-right lg:w-96">
+                  <h2 class="text-xl font-extrabold my-4 lg:my-0">The Benefits Only</h2>
+                  <hr class="text-gray-500 w-24 my-2 border mx-auto lg:mx-0 lg:ml-auto">
+                  <p class="text-gray-500 mx-auto lg:mx-0 w-60 lg:w-96">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="p-4 mt-2 bg-gray-200 rounded-full" width="60" height="60">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="p-4 mt-2 bg-gray-200 mx-auto lg:mx-0 rounded-full" width="60" height="60">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
                 </svg>
                 
@@ -580,12 +594,12 @@
 
     <!-- footer section -->
     <footer>
-        <footer class="footer footer-center p-10 bg-black text-base-content rounded">
+        <footer class="footer footer-center p-5 lg:p-10 bg-black text-base-content rounded">
             <div class="flex gap-4">
                 <img src="./images/logo.png" alt="">
                 <h3 class="normal-case text-4xl text-white font-bold hover:text-red-500">Fruit Burst</h3>
             </div>
-            <div class="grid grid-flow-col gap-14 text-lg font-semibold my-7 text-white">
+            <div class="grid grid-cols-4 lg:grid-flow-col gap-4 lg:gap-14 lg:text-lg font-semibold lg:my-7 text-white">
               <a class="link no-underline hover:text-red-500">Home</a> 
               <a class="link no-underline hover:text-red-500">About Us</a> 
               <a class="link no-underline hover:text-red-500">Shop</a> 
@@ -594,7 +608,7 @@
               <a class="link no-underline hover:text-red-500">My Account</a> 
             </div> 
             <div>
-              <div class="grid grid-flow-col text-white text-4xl gap-10">
+              <div class="grid grid-flow-col text-white text-3xl lg:text-4xl gap-5 lg:gap-10">
                 <a href=""><i class="fa-brands fa-twitter hover:text-red-500"></i></a>
                 <a href=""><i class="fa-brands fa-facebook hover:text-red-500"></i></a>
                 <a href=""><i class="fa-brands fa-youtube hover:text-red-500"></i></a>
